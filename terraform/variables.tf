@@ -27,3 +27,8 @@ variable "environment" {
         variable "private_subnet_cidr" {
         description = "The CIDR block of the private subnet"
         }
+
+        # Web
+        variable "web_instance_count" {
+        description = "The total of web instances to run"
+        }
