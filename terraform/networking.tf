@@ -1,10 +1,10 @@
 module "networking" {
         source              = "./modules/networking"
-        environment         = "${var.environment}"
-        vpc_cidr            = "${var.vpc_cidr}"
-        public_subnet_cidr  = "${var.public_subnet_cidr}"
-        private_subnet_cidr = "${var.private_subnet_cidr}"
-        region              = "${var.region}"
-        availability_zone   = "${var.availability_zone}"
-        key_name            = "${var.key_name}"
+        environment         = "test"
+        vpc_cidr            = "10.0.0.0/16"
+        public_subnet_cidr  = "10.0.2.0/24"
+        private_subnet_cidr = "10.0.1.0/24"
+        region              = "us-west-1a"
+        availability_zone   = "us-west-1a"
+        key_name            = "test"
         }
